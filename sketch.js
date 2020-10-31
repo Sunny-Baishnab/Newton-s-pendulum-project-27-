@@ -18,14 +18,14 @@ function setup() {
 	world = engine.world;
   
 	//Create the Bodies Here.
-    roof = new Roof(400,100,500,20);
+    roof = new Roof(400,100,400,20);
     bob1 = new Bob(20,300);
     bobDiameter=40;
-    rope1 = new Rope(bob1.body,roof.body,-bobDiameter*2,0);
+    rope1 = new Rope(bob1.body,roof.body,-bobDiameter*3.7,0);
 
     bob2 = new Bob(20,300);
     bobDiameter=40;
-    rope2 = new Rope(bob2.body,roof.body,-bobDiameter*1,0);
+    rope2 = new Rope(bob2.body,roof.body,-bobDiameter*1.8,0);
 
     bob3 = new Bob(20,300);
     bobDiameter = 40;
@@ -33,11 +33,11 @@ function setup() {
 
     bob4 = new Bob(20,300);
     bobDiameter=40;
-    rope4 = new Rope(bob4.body,roof.body,bobDiameter*1,0);
+    rope4 = new Rope(bob4.body,roof.body,bobDiameter*1.8,0);
 
     bob5 = new Bob(20,300);
     bobDiameter=40;
-    rope5 = new Rope(bob5.body,roof.body,bobDiameter*2,0);
+    rope5 = new Rope(bob5.body,roof.body,bobDiameter*3.7,0);
 
 	Engine.run(engine);
   
