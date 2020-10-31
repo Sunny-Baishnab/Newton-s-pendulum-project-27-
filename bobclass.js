@@ -10,12 +10,13 @@ class Bob {
         World.add(world,this.body);
     }
     display(){
-        var pos=this.body.position;
+        //var pos=this.body.position;
         push();
         translate(this.body.position.x,this.body.position.y);
         ellipseMode(RADIUS);
         fill("purple");
-        ellipse(pos.x,pos.y,40,40);
+        ellipse(0,0,40,40);
         pop();
+        
     }
 }
